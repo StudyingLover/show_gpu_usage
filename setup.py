@@ -1,8 +1,11 @@
 from setuptools import setup
 
+with open('README.md') as f:
+    LONG_DESCRIPTION = f.read()
+
 setup(
     name='show_gpu_usage',
-    version='0.1',
+    version='0.2',
     description='A library to show GPU usage in a terminal',
     url='https://github.com/your-username/your-library-name',
     author='StudyingLover',
@@ -12,6 +15,8 @@ setup(
     install_requires=[
         'asciichartpy==1.5.25'
     ],
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type='text/markdown',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
